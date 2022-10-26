@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Simple Todo-List & Weather App</title>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/ddece61056.js" crossorigin="anonymous"></script>
+
+    <!-- Roboto Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/time-date.css">
+
+</head>
+
+<body>
+  <main>
+    <section class="weather-section"> 
+      <div class="weather-time">
+
+        <div class="date-time-container">
+          <div class="display-date">
+            <span id="day">day</span>,
+            <span id="daynum">00</span>
+            <span id="month">month</span>
+            <span id="year">000</span>
+          </div>
+          <div class="display-time"></div>
+        </div>
+
+        <div class="container">
+          <h3>Enter Location To Check Weather</h3>
+          <div class="search-location">
+            <div class="search-box">
+                <i class="fa-solid fa-location-arrow"></i>
+                <input id="input-field" type="text" placeholder="Enter Your Location">
+                <button id="myBtn" class="fa-solid fa-magnifying-glass search-btn"> </button>
+            </div>
+
+            <div class="current-location">
+              <div class="divider">
+                <span></span>
+                  <h3>Or</h3>
+                <span></span>
+              </div>
+              <button onclick="getCurrentLocation()">Get Current Location's Weather</button>
+            </div>
+          </div>
+          <div class="weather-box">
+              <img src="" alt="">
+              <p class="temperature"></p>
+              <p class="description"></p>
+          </div>
+          <div class="weather-details">
+            <div class="feels">
+              <i class="fa-solid fa-temperature-high"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Feels Like</p>
+                </div>
+            </div>
+              <div class="humidity">
+                  <i class="fa-solid fa-water"></i>
+                  <div class="text">
+                      <span></span>
+                      <p>Humidity</p>
+                  </div>
+              </div>
+              <div class="wind">
+                  <i class="fa-solid fa-wind"></i>
+                  <div class="text">
+                      <span></span>
+                      <p>Wind Speed</p>
+                  </div>
+              </div>
+          </div>
+          <div class="not-found">
+            <img src="images/not-found.png" alt="Invalid Location">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   
+    <!-- JS Script-->
+    <script src="js/weather.js" type="text/javascript"></script>
+    <script src="js/time-date.js" type="text/javascript"></script>
+</body>
+
+</html>

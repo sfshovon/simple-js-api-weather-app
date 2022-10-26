@@ -1,0 +1,33 @@
+/* Date & Time  */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.date-time-container{
+  font-family: "Lato", sans-serif;
+  color: #0c5338;
+  background-color: #c3dadc;
+  border: 2px solid #1f3767;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.display-date {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.display-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.date-time-container:hover {
+  color: #daeeef;
+  background-color: rgb(90, 119, 130);
+  box-shadow: 0 0 30px#21eda9;
+  cursor: pointer;
+}
